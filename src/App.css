@@ -1,14 +1,14 @@
 @import url('./styles/utility.css');
 
-:root{
-    --bg-color: #000B49;
+:root {
+    --bg-color: #000b49;
     --text-color: #FFB5B5;
     --secondary-color: #FF7272;
     --shadow-color: #9b0000;
     --white-color: #ffffff;
 }
 
-.App{
-    background-color: var(--bg-color);
+.App {
+    background-image: linear-gradient(rgba(0, 11, 73, 1), rgba(0, 11, 73, 0.9)), url("./assets/bg.svg");
     color: var(--white-color);
 }
