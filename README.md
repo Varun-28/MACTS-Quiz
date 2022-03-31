@@ -1,4 +1,4 @@
-#MACTS Quiz
+# MACTS Quiz
 
 M - MOVIES
 
@@ -10,4 +10,4 @@ TS - TV SERIES
 
 A Quiz App that test your knowledge about Movies, Anime, Comics and TV Series.
 
-"Built with React JS Library"
+**Built with _React JS_ Library**
