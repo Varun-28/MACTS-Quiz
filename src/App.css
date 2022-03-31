@@ -1,0 +1,14 @@
+@import url('./styles/utility.css');
+
+:root{
+    --bg-color: #000B49;
+    --text-color: #FFB5B5;
+    --secondary-color: #FF7272;
+    --shadow-color: #9B0000;
+    --white-color: #ffffff;
+}
+
+.App{
+    background-color: var(--bg-color);
+    color: var(--white-color);
+}
