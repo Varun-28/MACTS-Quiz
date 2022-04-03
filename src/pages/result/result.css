@@ -1,1 +1,10 @@
 @import url("../../App.css");
+
+.result-heading{
+    color: var(--text-color);
+}
+
+.score{
+    color: var(--text-color);
+    font-size: 2rem;
+}
