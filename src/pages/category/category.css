@@ -23,3 +23,9 @@
 .category-card-img{
     border-radius: 1.2rem;
 }
+
+.category-heading{
+    border-top: solid 2px var(--text-color);
+    border-bottom: solid 2px var(--text-color);
+    padding: 5px;
+}

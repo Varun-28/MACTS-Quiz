@@ -15,6 +15,7 @@ function Category() {
 
   return (
     <div className="category-container flex flex-col items-center p-8 gap-8">
+      <h3 className="category-heading">Categories</h3>
       {categoryData.map(
         ({
           id,
