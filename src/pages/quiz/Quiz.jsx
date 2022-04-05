@@ -18,7 +18,7 @@ function Quiz() {
   // reset score
   useEffect(() => {
     setSelectedCategory((val) => ({ ...val, score: 0 }));
-  }, []);
+  }, [setSelectedCategory]);
 
   // rules hide-show button function
   const rulesHandler = () => {
