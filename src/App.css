@@ -6,6 +6,8 @@
     --secondary-color: #FF7272;
     --shadow-color: #9b0000;
     --white-color: #ffffff;
+    --correct-color: #6BCB77;
+    --wrong-color: #FD5D5D;
 }
 
 .App {

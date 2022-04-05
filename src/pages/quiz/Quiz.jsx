@@ -20,18 +20,23 @@ function Quiz() {
     setSelectedCategory((val) => ({ ...val, score: 0 }));
   }, []);
 
+  // rules hide-show button function
   const rulesHandler = () => {
     setRules((val) => !val);
   };
-  const resultHandler = (isCorrect) => {
-    const nextQues = currentQues + 1;
-    nextQues < result.quiz.length
-      ? setCurrentQues(nextQues)
-      : navigate("/result");
 
+  // result updation and action function
+  const resultHandler = (isCorrect) => {
     isCorrect
       ? setSelectedCategory((val) => ({ ...val, score: val.score + 10 }))
       : setSelectedCategory((val) => ({ ...val, score: val.score - 10 }));
+
+    setTimeout(() => {
+      const nextQues = currentQues + 1;
+      nextQues < result.quiz.length
+        ? setCurrentQues(nextQues)
+        : navigate("/result");
+    }, 1000);
   };
 
   return (
@@ -58,8 +63,8 @@ function Quiz() {
       {rules && <Rules rulesHandler={rulesHandler} />}
       {selectedCategory.value.length === 0 && <EmptyValue />}
       <div className="rules-btn">
-        <button class="btn btn-fab btn-round" onClick={rulesHandler}>
-          <i class="fa-solid fa-question"></i>
+        <button className="btn btn-fab btn-round" onClick={rulesHandler}>
+          <i className="fa-solid fa-question"></i>
         </button>
       </div>
     </div>

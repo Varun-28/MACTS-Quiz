@@ -105,6 +105,162 @@ export const quizData = [
       },
     ],
   },
+  {
+    quizId: uuid(),
+    quizName: "MCU",
+    categoryValue: "mcu",
+    quiz: [
+      {
+        question: "What is Captain America’s shield made of?",
+        options: [
+          { answer: "Adamantium", isCorrect: false},
+          { answer: "Vibranium", isCorrect: true},
+          { answer: "Promethium", isCorrect: false},
+          { answer: "Carbonadium", isCorrect: false},
+        ],
+      },
+      {
+        question: "What is the alien race Loki sends to invade Earth in The Avengers?",
+        options: [
+          { answer: "The Chitauri", isCorrect: true},
+          { answer: "The Skrulls", isCorrect: false},
+          { answer: "The Kree", isCorrect: false},
+          { answer: "The Flerkens", isCorrect: false},
+        ],
+      },
+      {
+        question: "What fake name does Natasha use when she first meets Tony?",
+        options: [
+          { answer: "Natalie Rushman", isCorrect: true},
+          { answer: "Natalia Romanoff", isCorrect: false},
+          { answer: "Nicole Rohan", isCorrect: false},
+          { answer: "Naya Rabe", isCorrect: false},
+        ],
+      },
+      {
+        question: "About which city do Hawkeye and Black Widow often reminisce?",
+        options: [
+          { answer: "Budapest", isCorrect: true},
+          { answer: "Prague", isCorrect: false},
+          { answer: "Istanbul", isCorrect: false},
+          { answer: "Sokovia", isCorrect: false},
+        ],
+      },
+      {
+        question: "What were the three items Rocket claims he needs in order to escape the prison?",
+        options: [
+          { answer: "A security card, a fork, and an ankle monitor", isCorrect: false},
+          { answer: "A security band, a battery, and a prosthetic leg", isCorrect: true},
+          { answer: "A pair of binoculars, a detonator, and a prosthetic leg", isCorrect: false},
+          { answer: "A knife, cable wires, and Peter’s mixtape", isCorrect: false},
+        ],
+      },
+    ],
+  },
+  {
+    quizId: uuid(),
+    quizName: "Naruto",
+    categoryValue: "naruto",
+    quiz: [
+      {
+        question: "Which of Gamabunta's sons does Naruto accidentally summon during his fight against Gaara?",
+        options: [
+          { answer: "Gamakichi", isCorrect: true},
+          { answer: "Gamamoro", isCorrect: false},
+          { answer: "Gamatatsu", isCorrect: false},
+          { answer: "Gamaken", isCorrect: false},
+        ],
+      },
+      {
+        question: "Who are Itachi and Kisame looking for when they first arrive in Konoha together?",
+        options: [
+          { answer: "Kakashi", isCorrect: false},
+          { answer: "Nobody", isCorrect: false},
+          { answer: "Sasuke", isCorrect: false},
+          { answer: "Naruto", isCorrect: true},
+        ],
+      },
+      {
+        question: "Which of the Eight Gates does Rock Lee stop at against Gaara in the Chunin Exams?",
+        options: [
+          { answer: "5th Gate: The Gate of Closing", isCorrect: true},
+          { answer: "4th Gate: The Gate of Pain", isCorrect: false},
+          { answer: "6th Gate: The Gate of Joy", isCorrect: false},
+          { answer: "3rd Gate: The Gate of Life", isCorrect: false},
+        ],
+      },
+      {
+        question: "The red spiral on the back of Konoha vests symbolizes a friendship with which clan?",
+        options: [
+          { answer: "Senju", isCorrect: false},
+          { answer: "Uzumaki", isCorrect: true},
+          { answer: "Namikaze", isCorrect: false},
+          { answer: "Uchiha", isCorrect: false},
+        ],
+      },
+      {
+        question: "What is the name of Madara Uchiha's grand plan?",
+        options: [
+          { answer: "Project Tsukuyomi", isCorrect: false},
+          { answer: "Project Tsukigakure", isCorrect: false},
+          { answer: "Project Tsuki no Me", isCorrect: true},
+          { answer: "Infinite Tsukuyomi", isCorrect: false},
+        ],
+      },
+    ],
+  },
+  {
+    quizId: uuid(),
+    quizName: "Twilight",
+    categoryValue: "twilight",
+    quiz: [
+      {
+        question: "How many films are there in The Twilight Saga series?",
+        options: [
+          { answer: "5", isCorrect: true},
+          { answer: "2", isCorrect: false},
+          { answer: "6", isCorrect: false},
+          { answer: "3", isCorrect: false},
+        ],
+      },
+      {
+        question: "Who does Jasper refer to when he says They'll fight like children in Twilight Saga: Eclipse?",
+        options: [
+          { answer: "Volturi", isCorrect: false},
+          { answer: "Wolves", isCorrect: false},
+          { answer: "Newborns", isCorrect: true},
+          { answer: "Other Vampires", isCorrect: false},
+        ],
+      },
+      {
+        question: "What is the name of the main character in the movie Twilight?",
+        options: [
+          { answer: "Allice Cullen", isCorrect: false},
+          { answer: "Esme Cullen", isCorrect: false},
+          { answer: "Isabella Swan", isCorrect: true},
+          { answer: "Rosalie", isCorrect: false},
+        ],
+      },
+      {
+        question: "What does Bella receive from Jacob on her birthday?",
+        options: [
+          { answer: "A Cake", isCorrect: false},
+          { answer: "A Dream Catcher", isCorrect: true},
+          { answer: "A Ring", isCorrect: false},
+          { answer: "A Music Player", isCorrect: false},
+        ],
+      },
+      {
+        question: "Where do Bella and Edward get married?",
+        options: [
+          { answer: "Outside the Cullens house", isCorrect: true},
+          { answer: "In a Church", isCorrect: false},
+          { answer: "Chalie", isCorrect: false},
+          { answer: "At Museum", isCorrect: false},
+        ],
+      },
+    ],
+  },
 ];
 
 
