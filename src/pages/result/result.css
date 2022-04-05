@@ -10,7 +10,8 @@
 }
 
 .result-score{
-    border: solid 2px var(--text-color);
+    border-top: solid 2px var(--text-color);
+    border-bottom: solid 2px var(--text-color);
     width: max-content;
 }
 

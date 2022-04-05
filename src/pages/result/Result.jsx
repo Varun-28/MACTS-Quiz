@@ -13,7 +13,7 @@ function Result() {
   return (
     <div className="my-4 flex flex-col">
       <h2 className="result-heading my-4">Quiz Result</h2>
-      <h3 className="result-score my-8 mx-auto p-2 border-5">
+      <h3 className="result-score my-8 mx-auto p-2">
         You Scored: <span className="score">{selectedCategory.score}</span>/50
       </h3>
       {quiz.map((item) => (
