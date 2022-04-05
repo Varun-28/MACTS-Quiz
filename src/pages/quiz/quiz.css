@@ -38,3 +38,11 @@
 .rules-btn .btn-round{
     background-color: var(--text-color);
 }
+
+@media only screen and (max-width: 800px) {
+    .ques-container{
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }    
+}
