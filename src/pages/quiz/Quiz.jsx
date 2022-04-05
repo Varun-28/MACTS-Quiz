@@ -31,12 +31,10 @@ function Quiz() {
       ? setSelectedCategory((val) => ({ ...val, score: val.score + 10 }))
       : setSelectedCategory((val) => ({ ...val, score: val.score - 10 }));
 
-    setTimeout(() => {
-      const nextQues = currentQues + 1;
-      nextQues < result.quiz.length
-        ? setCurrentQues(nextQues)
-        : navigate("/result");
-    }, 1000);
+    const nextQues = currentQues + 1;
+    nextQues < result.quiz.length
+      ? setCurrentQues(nextQues)
+      : navigate("/result");
   };
 
   return (
@@ -44,7 +42,7 @@ function Quiz() {
       <h2 className="quiz-heading p-4 my-8">
         Welcome to <span className="quiz-name">{result.quizName}</span> quiz!
       </h2>
-      <div className="ques-container">
+      <div className="ques-container w-80p mx-auto">
         <h4 className="quiz-ques my-4">
           Q{currentQues + 1}. {result.quiz[currentQues].question}
         </h4>

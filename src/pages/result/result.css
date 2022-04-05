@@ -8,3 +8,37 @@
     color: var(--text-color);
     font-size: 2rem;
 }
+
+.result-score{
+    border: solid 2px var(--text-color);
+    width: max-content;
+}
+
+.result-heading{
+    text-align: center;
+}
+
+.ques-wrapper{
+    width: 75%;
+    margin: 1rem auto;
+}
+
+.option-correct{
+    background-color: var(--correct-color);
+    color: var(--bg-color);
+    padding: 5px;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.play-again-wrapper{
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+}
+
+.play-again-btn{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    box-shadow: 4px 4px 8px -2px var(--white-color);
+}
