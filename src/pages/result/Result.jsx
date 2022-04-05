@@ -9,6 +9,8 @@ function Result() {
   const { quiz } = quizData.find(
     (element) => element.categoryValue === selectedCategory.value
   );
+  const scoreArr = [-50, -30, -10, 30, 50];
+  const correctQues = scoreArr.indexOf(selectedCategory.score) + 1;
 
   return (
     <div className="my-4 flex flex-col">
@@ -16,6 +18,7 @@ function Result() {
       <h3 className="result-score my-8 mx-auto p-2">
         You Scored: <span className="score">{selectedCategory.score}</span>/50
       </h3>
+      <h4 className="correct-ques mx-8 mb-4">Correct Questions : <span className="correct-ques-count">{correctQues}</span>/5</h4>
       {quiz.map((item) => (
         <div key={item.question} className="ques-wrapper">
           <h4>Q. {item.question}</h4>

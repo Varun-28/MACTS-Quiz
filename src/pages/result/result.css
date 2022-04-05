@@ -43,3 +43,11 @@
     color: var(--bg-color);
     box-shadow: 4px 4px 8px -2px var(--white-color);
 }
+
+.correct-ques{
+    text-align: right;
+}
+
+.correct-ques-count{
+    color: var(--correct-color);
+}
