@@ -1,15 +1,20 @@
 import React from "react";
 import "./category.css";
 import { categoryData } from "../../data/categoryData";
-import { useCategory } from "../../utils/category-context";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { quizData } from "../../data/quizData.js";
+import { setQuestions } from "../../redux/categorySlice.js";
 
 function Category() {
   const navigate = useNavigate();
-  const { setSelectedCategory } = useCategory();
+  const dispatch = useDispatch();
 
-  function categoryHandler(categoryValue){
-    setSelectedCategory(val =>( {...val, value: categoryValue}));
+  function categoryHandler(categoryValue) {
+    const findCategory = quizData.find(
+      (ele) => ele.categoryValue === categoryValue
+    );
+    dispatch(setQuestions(findCategory));
     navigate("/quiz");
   }
 
@@ -24,8 +29,10 @@ function Category() {
           categoryImage,
           categoryValue,
         }) => (
-          <div key={id} className="category-card flex items-center"
-          onClick={() => categoryHandler(categoryValue)}
+          <div
+            key={id}
+            className="category-card flex items-center"
+            onClick={() => categoryHandler(categoryValue)}
           >
             <div>
               <img
