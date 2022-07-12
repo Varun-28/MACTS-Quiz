@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { EmptyValue } from "../../components/EmptyValue";
 import { Rules } from "../../components/Rules";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  decrementScore,
   incrementScore,
   resetScore,
+  updateUserClick,
 } from "../../redux/categorySlice";
 import "./quiz.css";
 
@@ -29,13 +28,16 @@ function Quiz() {
   };
 
   // result updation and action function
-  const resultHandler = (isCorrect) => {
-    isCorrect ? dispatch(incrementScore()) : dispatch(decrementScore());
+  const resultHandler = (option) => {
+    option.isCorrect && dispatch(incrementScore());
+    dispatch(updateUserClick(option.id));
 
     const nextQues = currentQues + 1;
-    nextQues < questions.quiz.length
-      ? setCurrentQues(nextQues)
-      : navigate("/result");
+    if (nextQues < questions.quiz.length) {
+      setCurrentQues(nextQues);
+    } else {
+      navigate("/result");
+    }
   };
 
   return (
@@ -51,7 +53,7 @@ function Quiz() {
           {questions.quiz[currentQues].options.map((option) => (
             <button
               className="quiz-option p-2 my-2"
-              onClick={() => resultHandler(option.isCorrect)}
+              onClick={() => resultHandler(option)}
               key={option.answer}
             >
               {option.answer}
@@ -60,7 +62,6 @@ function Quiz() {
         </div>
       </div>
       {rules && <Rules rulesHandler={rulesHandler} />}
-      {(Object.keys(questions).length === 0) === 0 && <EmptyValue />}
       <div className="rules-btn">
         <button className="btn btn-fab btn-round" onClick={rulesHandler}>
           <i className="fa-solid fa-question"></i>

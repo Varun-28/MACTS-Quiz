@@ -10,18 +10,22 @@ export const categorySlice = createSlice({
       state.score = 0;
     },
     incrementScore: (state) => {
-        state.score += 10;
-    },
-    decrementScore: (state) => {
-        state.score -= 5;
+      state.score += 10;
     },
     setQuestions: (state, action) => {
       state.questions = action.payload;
     },
+    updateUserClick: (state, action) => {
+      state.questions.quiz.map((ques) =>
+        ques.options.map((ans) =>
+          ans.id === action.payload ? (ans.isClick = true) : ans
+        )
+      );
+    },
   },
 });
 
-export const { resetScore, setQuestions, decrementScore, incrementScore } =
+export const { resetScore, setQuestions, incrementScore, updateUserClick } =
   categorySlice.actions;
 
 export default categorySlice.reducer;

@@ -24,12 +24,19 @@
     margin: 1rem auto;
 }
 
-.option-correct{
-    background-color: var(--correct-color);
-    color: var(--bg-color);
+.option{
     padding: 5px;
     width: max-content;
     border-radius: 5px;
+}
+
+.option-correct{
+    background-color: var(--correct-color);
+    color: var(--bg-color);
+}
+
+.option-wrong{
+    background-color: var(--wrong-color);
 }
 
 .play-again-wrapper{
