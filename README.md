@@ -24,7 +24,7 @@ Built with **_React JS_** Library
 ✅ Home page from where users can go to category page <br />
 ✅ Category page from where users can choose the quiz he/she wants to play <br />
 ✅ Quiz page where users will see 1 question at a time and answer it to move forward <br />
-✅ Result Page where total score & corrected question count will be displayed and questions with their correct answers <br />
+✅ Result Page where total score & corrected question count will be displayed and questions with their correct and worng answers <br />
 
 <br />
 
@@ -36,5 +36,6 @@ Built with **_React JS_** Library
 
 ![Screenshot 2022-04-05 at 21-54-08 MACTS - Quiz](https://user-images.githubusercontent.com/56184699/161801269-44c83113-069b-46e4-8e1e-be4dc4d2bd3e.png)
 
-![Screenshot 2022-04-05 at 22-29-10 MACTS - Quiz](https://user-images.githubusercontent.com/56184699/161809587-e9e225ac-083c-40d3-a97b-cca32b913216.png)
+![Screenshot 2022-07-18 at 11-52-21 MACTS - Quiz](https://user-images.githubusercontent.com/56184699/179454982-3514848b-04cd-4043-b3b8-f78a56a19e7b.png)
+
 
