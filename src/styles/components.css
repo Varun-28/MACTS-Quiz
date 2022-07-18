@@ -1,7 +1,7 @@
 @import url('../App.css');
 
 .screen-container {
-    position: absolute;
+    position: fixed;
     z-index: 5;
     left: 0;
     right: 0;
